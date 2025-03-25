@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sürdürülebilir Alışveriş Anketi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 70%;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #4CAF50;
+            text-align: center;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            font-size: 1.2em;
+        }
+        .question input[type="radio"] {
+            margin-right: 10px;
+        }
+        .next-btn {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .next-btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sürdürülebilir Alışveriş Anketi</h1>
+
+        <!-- Question 1 -->
+        <div class="question">
+            <p>1. Alışveriş yaparken, aldığınız ürünlerin toplumsal faydalara katkı sağladığını düşünüyor musunuz?</p>
+            <input type="radio" id="evet-toplumsal" name="toplumsal-fayda" value="evet"> Evet, ürünlerin üretim süreçlerinin toplumsal faydaya katkı sağladığını göz önünde bulunduruyorum <br>
+            <input type="radio" id="bazen-toplumsal" name="toplumsal-fayda" value="bazen"> Bazen, ama genellikle bu konuda düşünmüyorum <br>
+            <input type="radio" id="hayir-toplumsal" name="toplumsal-fayda" value="hayir"> Hayır, toplumsal fayda benim alışveriş tercihlerimi etkilemiyor <br>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="question">
+            <p>2. Sürdürülebilir ürünleri tercih ederek toplumda daha geniş bir çevresel etki yaratmanın mümkün olduğunu düşünüyor musunuz?</p>
+            <input type="radio" id="evet-cevre" name="cevre-etki" value="evet"> Evet, bireysel tercihlerim toplumsal değişimi tetikleyebilir <br>
+            <input type="radio" id="bazen-cevre" name="cevre-etki" value="bazen"> Bazen, ama etki sınırlı olabilir <br>
+            <input type="radio" id="hayir-cevre" name="cevre-etki" value="hayir"> Hayır, bireysel alışverişlerim toplumsal değişimi etkilemez <br>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="question">
+            <p>3. Yerel üreticilerden alışveriş yaparak toplumu ekonomik olarak desteklemenin önemli olduğunu düşünüyor musunuz?</p>
+            <input type="radio" id="evet-yerel" name="yerel-ureticiler" value="evet"> Evet, yerel üreticilerin desteklenmesi gerektiğine inanıyorum <br>
+            <input type="radio" id="bazen-yerel" name="yerel-ureticiler" value="bazen"> Bazen, ama fiyat ve kalite tercihime göre değişir <br>
+            <input type="radio" id="hayir-yerel" name="yerel-ureticiler" value="hayir"> Hayır, yerel üreticilerden alışveriş yapmak benim için öncelikli değil <br>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="question">
+            <p>4. Sosyal sorumluluk projeleri veya adil ticaret markalarını tercih ediyor musunuz?</p>
+            <input type="radio" id="evet-sosyal" name="sosyal-projeler" value="evet"> Evet, bu tür markaları tercih ederim çünkü toplumsal fayda sağladığını düşünüyorum <br>
+            <input type="radio" id="bazen-sosyal" name="sosyal-projeler" value="bazen"> Bazen, ama genellikle fiyat ve kalite önceliğim <br>
+            <input type="radio" id="hayir-sosyal" name="sosyal-projeler" value="hayir"> Hayır, sosyal sorumluluk projeleri beni fazla etkilemez <br>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="question">
+            <p>5. Alışveriş yaparken çevreye duyarlı üretim süreçlerine sahip ürünlerin toplumsal sorumluluk açısından daha değerli olduğunu düşünüyor musunuz?</p>
+            <input type="radio" id="evet-cevre-degerli" name="cevre-degerli" value="evet"> Evet, çevre dostu üretim süreçlerine sahip ürünler toplumsal fayda sağlar <br>
+            <input type="radio" id="bazen-cevre-degerli" name="cevre-degerli" value="bazen"> Bazen, ama diğer faktörler de önemlidir <br>
+            <input type="radio" id="hayir-cevre-degerli" name="cevre-degerli" value="hayir"> Hayır, bu konu benim alışveriş tercihlerimi etkilemez <br>
+        </div>
+
+        <!-- Question 6 -->
+        <div class="question">
+            <p>6. Sürdürülebilir alışverişin yalnızca çevre değil, aynı zamanda toplumun en dezavantajlı gruplarına yardımcı olabileceğini düşünüyor musunuz?</p>
+            <input type="radio" id="evet-surdurulabilir" name="surdurulabilir" value="evet"> Evet, sürdürülebilir alışveriş toplumsal adaleti ve eşitliği artırabilir <br>
+            <input type="radio" id="bazen-surdurulabilir" name="surdurulabilir" value="bazen"> Bazen, ama bu etki sınırlı olabilir <br>
+            <input type="radio" id="hayir-surdurulabilir" name="surdurulabilir" value="hayir"> Hayır, sürdürülebilir alışverişin toplumsal fayda sağladığını düşünmüyorum <br>
+        </div>
+
+        <!-- Question 7 -->
+        <div class="question">
+            <p>7. Alışveriş yaparken, ürünlerin etik üretim süreçlerine sahip olması gerektiğine inanıyor musunuz?</p>
+            <input type="radio" id="evet-etik" name="etik-uretim" value="evet"> Evet, etik üretim süreçleri toplumsal faydayı arttırır ve buna önem veriyorum <br>
+            <input type="radio" id="bazen-etik" name="etik-uretim" value="bazen"> Bazen, ama fiyat ve kalite tercihine göre değişir <br>
+            <input type="radio" id="hayir-etik" name="etik-uretim" value="hayir"> Hayır, etik üretim benim için önemli değil <br>
+        </div>
+
+        <!-- Question 8 -->
+        <div class="question">
+            <p>8. Alışveriş alışkanlıklarınızı değiştirmek, çevreyi ve toplumu koruma adına toplumsal sorumluluk taşıdığınızı düşündürür mü?</p>
+            <input type="radio" id="evet-aliskanlik" name="aliskanlik-sorumluluk" value="evet"> Evet, alışverişlerimde bilinçli seçimler yaparak toplumsal fayda sağlıyorum <br>
+            <input type="radio" id="bazen-aliskanlik" name="aliskanlik-sorumluluk" value="bazen"> Bazen, ama bu konuda daha fazla bilgi edinmem gerekebilir <br>
+            <input type="radio" id="hayir-aliskanlik" name="aliskanlik-sorumluluk" value="hayir"> Hayır, alışveriş alışkanlıklarımın toplumsal fayda sağladığını düşünmüyorum <br>
+        </div>
+
+        <!-- Question 9 -->
+        <div class="question">
+            <p>9. Ürünlerin geri dönüştürülebilir veya sürdürülebilir malzemelerden yapılmış olması, toplumda bilinçli tüketimi teşvik etmek adına önemli midir?</p>
+            <input type="radio" id="evet-geridonusum" name="geridonusum" value="evet"> Evet, sürdürülebilir malzemeler toplumda bilinçli tüketimi artırabilir <br>
+            <input type="radio" id="bazen-geridonusum" name="geridonusum" value="bazen"> Bazen, fakat diğer faktörler de bu etkiyi gösterebilir <br>
+            <input type="radio" id="hayir-geridonusum" name="geridonusum" value="hayir"> Hayır, bu tür malzemeler toplumsal bilinç oluşturmak için yeterli değildir <br>
+        </div>
+
+        <!-- Question 10 -->
+        <div class="question">
+            <p>10. Sürdürülebilir alışverişin, daha geniş toplumsal etkiler yaratacak bir kültür oluşturma adına önemli bir araç olduğunu düşünüyor musunuz?</p>
+            <input type="radio" id="evet-kultur" name="kultur" value="evet"> Evet, sürdürülebilir alışveriş toplumsal bir değişim başlatabilir <br>
+            <input type="radio" id="bazen-kultur" name="kultur" value="bazen"> Bazen, ancak bu tür değişimler zaman alabilir <br>
+            <input type="radio" id="hayir-kultur" name="kultur" value="hayir"> Hayır, alışveriş alışkanlıkları toplumsal değişim yaratmaz <br>
+        </div>
+
+        <button class="next-btn" onclick="showThankYouMessage()">Anketi Bitir</button>
+    </div>
+
+    <script>
+        function showThankYouMessage() {
+            alert("Teşekkür ederiz! Anketinizi tamamladınız.");
+        }
+    </script>
+</body>
+</html>
+   
